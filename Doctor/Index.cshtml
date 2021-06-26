@@ -1,0 +1,28 @@
+﻿@using LaboratoriPerAnaliza.Models;
+@{
+    ViewData["Title"] = "Doctoret";
+    var doctor = (List<Doctor>)ViewData["Doctor"];
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6" style="display: -webkit-inline-box;">
+            @foreach (var dc in doctor)
+            {
+                <div class="our-team" style="margin: 6%;width: 100%;">
+                    <div class="pic">
+                        <img src="~/images/gjaku.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">@dc.FirstName</h3>
+                        <p><strong>Email: </strong>@dc.Email</p>
+                        <p><strong>Phone: </strong> @dc.Telephone </p>
+                        <p><strong>Description: </strong> @dc.Description</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+
