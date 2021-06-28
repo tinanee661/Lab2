@@ -14,5 +14,7 @@ namespace LaboratoriAnalizav.Data
         {
         }
         public DbSet<Service> Services { get; set; }
+        public DbSet<Terminet> Terminets { get; set; }
+
     }
 }
