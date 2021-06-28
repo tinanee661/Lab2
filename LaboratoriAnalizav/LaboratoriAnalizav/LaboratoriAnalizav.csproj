@@ -13,4 +13,8 @@
     <PackageReference Include="ReflectionIT.Mvc.Paging" Version="3.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Terminets\" />
+  </ItemGroup>
+
 </Project>
