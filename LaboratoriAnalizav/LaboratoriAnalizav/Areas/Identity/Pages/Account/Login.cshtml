@@ -1,0 +1,58 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div class="row" id="registerform">
+    <div class="col-md-4 leftpart">
+        <section>
+            <form method="post">
+                <h1>Use a local account to log in.</h1>
+                <img src="https://static7.depositphotos.com/1194063/755/i/950/depositphotos_7553989-stock-photo-scientist-working-at-the-laboratory.jpg">
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="form-control" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="form-control" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label asp-for="Input.RememberMe">
+                            <input asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+                </div>
+                <div class="buttonslogin">
+                    <button type="submit" class="btn btn-default">Log in</button>
+                    <button type="submit" class="btn btn-default buton2" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register</button>
+                </div>
+                <div class="form-group ml-5">
+                    <p>
+                        <a asp-page="./ForgotPassword">Forgot your password?</a>
+                    </p>
+
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+    <div class="fotoright">
+        <img src="https://static7.depositphotos.com/1194063/755/i/600/depositphotos_7553939-stock-photo-scientist-working-at-the-laboratory.jpg" alt="autumn leaves">
+    </div>
+
+
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

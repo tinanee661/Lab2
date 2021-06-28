@@ -1,0 +1,45 @@
+﻿@model IEnumerable<LaboratoriAnalizav.Models.Service>
+@using ReflectionIT.Mvc.Paging;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="service-grid">
+    <div class="container">
+
+        <div class="row" style="margin-top:10%;">
+          
+                <a asp-action="Create" class="btn btn-primary" style="margin-left:1%">Create New</a>
+            
+            
+            @foreach (var item in Model)
+            {
+                <p>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="service-wrap">
+
+                            <h4>@Html.DisplayNameFor(model => model.Name)</h4> @Html.DisplayFor(modelItem => item.Name)
+                            <h4> @Html.DisplayNameFor(model => model.Description)</h4> @Html.DisplayFor(modelItem => item.Description)
+
+                            <hr />
+
+                            <a asp-action="Edit" class="edit" asp-route-id="@item.Id" style="color: yellow;"><i class="material-icons" data-toggle="tooltip">&#xE254;</i></a>
+                            <a asp-action="Details" class="details" asp-route-id="@item.Id" style="color: gray;"><i class="material-icons" data-toggle="tooltip">&#xe04a;</i></a>
+                            <a asp-action="Delete" class="delete" asp-route-id="@item.Id" style="color: red;"><i class="material-icons" data-toggle="tooltip">&#xE872;</i></a>
+
+
+                        </div>
+
+                    </div>
+                </p>
+
+             }
+            
+        </div>
+        <nav>
+            @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+        </nav>
+    </div>
+
+</section>

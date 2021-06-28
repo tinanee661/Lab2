@@ -852,13 +852,13 @@ registerform {
     align-content: center;
 }
 
-    .leftpart img {
-        width: 80px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        border-radius: 100%;
-    }
+.leftpart img {
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 100%;
+}
 
     .leftpart input {
         margin: 10px;
@@ -869,7 +869,6 @@ registerform {
         background: #eee;
         border-radius: 30px;
     }
-
     .leftpart button {
         margin: 10px;
         width: 25%;
@@ -878,7 +877,6 @@ registerform {
         background: #eee;
         border-radius: 30px;
     }
-
     .leftpart h1 {
         width: 100%;
         text-align: center;
@@ -888,11 +886,10 @@ registerform {
 .fotoright {
     overflow: hidden;
 }
-
-    .fotoright img {
-        width: 70%;
-        margin-top: 97px;
-    }
+.fotoright img {
+    width: 70%;
+    margin-top: 97px;
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -904,3 +901,6 @@ registerform {
         display: none;
     }
 }
+
+
+
