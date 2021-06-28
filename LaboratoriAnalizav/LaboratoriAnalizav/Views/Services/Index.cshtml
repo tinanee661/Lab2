@@ -9,10 +9,13 @@
     <div class="container">
 
         <div class="row" style="margin-top:10%;">
-          
+
+            @if (User.IsInRole("Admin"))
+            {
                 <a asp-action="Create" class="btn btn-primary" style="margin-left:1%">Create New</a>
-            
-            
+            }
+
+
             @foreach (var item in Model)
             {
                 <p>
@@ -34,8 +37,8 @@
                     </div>
                 </p>
 
-             }
-            
+            }
+
         </div>
         <nav>
             @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
