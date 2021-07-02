@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "60dece1e4795a012b4b8d483"
+  },
+  "name": "Agim Bytyqi",
+  "email": "a.bytyqi@out.com",
+  "phone": 9612327,
+  "description": "Analiza t'alergjis",
+  "updated_date": {
+    "$date": "2021-07-02T08:28:14.527Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60dece5c4795a012b4b8d484"
+  },
+  "name": "Bardh Krasniqi",
+  "email": "bardh.krasniqi@hotmail.com",
+  "phone": 94037974,
+  "description": "Analiza t'gjendrrave",
+  "updated_date": {
+    "$date": "2021-07-02T08:29:16.673Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ded142a8ae8136843d2e7a"
+  },
+  "name": "Arta Neziraj",
+  "email": "arta.neziraj@hotmail.com",
+  "phone": 9612327,
+  "description": "Analiza t'gjendrrave",
+  "updated_date": {
+    "$date": "2021-07-02T08:41:38.955Z"
+  },
+  "__v": 0
+}]
