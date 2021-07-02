@@ -1,5 +1,14 @@
 {
   "version": "1.0",
   "defaultProvider": "cdnjs",
-  "libraries": []
+  "libraries": [
+    {
+      "library": "vue@2.6.14",
+      "destination": "wwwroot/lib/Vue"
+    },
+    {
+      "library": "axios@0.21.1",
+      "destination": "wwwroot/lib/axios"
+    }
+  ]
 }
