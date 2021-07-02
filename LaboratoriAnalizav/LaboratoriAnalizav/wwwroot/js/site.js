@@ -3,6 +3,7 @@
     $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
 });
 
+
 $(document).ready(function () {
     $("#myInput").on("keyup", function () {
         var value = $(this).val().toLowerCase();
@@ -31,7 +32,7 @@ $("#create-form").submit(function (e) {
         user,
         __RequestVerificationToken: token
     };
-    
+
     $.ajax({
         type: "POST",
         url: e.currentTarget.action,
