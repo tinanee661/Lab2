@@ -20,7 +20,7 @@ router.get('/:id', function(req, res, next) {
 
 /* SAVE Doctor */
 router.post('/', function(req, res) {
-    console.log(req)
+    console.log(req.body)
     let doctor = req.body;
     doctor.name = req.body.name
     doctor.email = req.body.email
