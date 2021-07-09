@@ -903,4 +903,25 @@ registerform {
 }
 
 
+.userinfo > li > a:hover {
+    background-color: #3e5669;
+    color: white;
+    text-decoration: none;
+    border-radius: 21px;
+}
+
+.logout-btn button {
+    color: white;
+    font-size: 20px;
+    margin: 5px 15px
+}
+
+    .logout-btn button:hover {
+        background-color: #3e5669;
+        color: white;
+        text-decoration: none;
+        border-radius: 21px;
+    }
+
+
 
